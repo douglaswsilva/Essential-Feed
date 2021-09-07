@@ -15,7 +15,7 @@ internal final class FeedItemsMapper {
             return items.map { $0.item }
         }
     }
-
+    
     private struct Item: Decodable {
         public let id: UUID
         public let description: String?
