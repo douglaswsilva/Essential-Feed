@@ -146,7 +146,6 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
     }
     
     private func expect(_ sut: RemoteFeedLoader, toCompleteWith expectResult: RemoteFeedLoader.Result, when action: () -> Void, file: StaticString = #filePath, line: UInt = #line) {
-        
         let exp = expectation(description: "Wait for load completion")
         sut.load { receivedResult in
             switch (receivedResult, expectResult) {
