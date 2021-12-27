@@ -140,7 +140,7 @@ class LoadFeedFromCacheUseCaseTests: XCTestCase {
         sut = nil
         store.completeRetrievalWithEmptyCache()
         
-        XCTAssertTrue(receivedResults.isEmpty)
+        XCTAssertTrue(receivedResults.isEmpty )
     }
     
     // MARK: - Helpers
