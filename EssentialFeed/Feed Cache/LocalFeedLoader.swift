@@ -59,7 +59,7 @@ public final class LocalFeedLoader {
                 self.store.deleteCachedFeed { _ in }
             case let .found(_, timestamp) where !self.validate(timestamp):
                 self.store.deleteCachedFeed { _ in }
-            default:
+            case .empty, .found:
                 break
             }
         }
