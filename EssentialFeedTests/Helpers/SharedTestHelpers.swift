@@ -1,16 +1,13 @@
 //
-//  SharedTestHelpers.swift
-//  EssentialFeedTests
-//
-//  Created by Douglas Silva on 27/12/21.
+//  Copyright © 2019 Essential Developer. All rights reserved.
 //
 
 import Foundation
 
-var anyNSError: NSError {
-    NSError(domain: "any error", code: 0, userInfo: nil)
+func anyNSError() -> NSError {
+	return NSError(domain: "any error", code: 0)
 }
 
 func anyURL() -> URL {
-    return URL(string: "http://any-url.com")!
+	return URL(string: "http://any-url.com")!
 }
